@@ -15,6 +15,15 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
  <link rel="stylesheet" href="css/font-awesome.min.css">
  <link rel="stylesheet" href="css/font11.css">
+
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+
+<script src="node_modules/zone.js/dist/zone.js"></script>
+<script src="node_modules/systemjs/dist/system.src.js"></script>
+<script src="systemjs.config.js"></script>
+<script>
+	System.import('app').catch(function(err){ console.error(err); });
+</script>
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
@@ -33,8 +42,6 @@
 <script src="js/jquery.easing.min.js"></script>
 <!-- pignose css -->
 <link href="css/pignose.layerslider.css" rel="stylesheet" type="text/css" media="all" />
-
-
 <!-- //pignose css -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
@@ -51,53 +58,11 @@
 <script src="js/jquery.easing.min.js"></script>
 </head>
 <body>
-<!-- header -->
-<!--<div class="header">
-	<div class="container">
-		<ul>
-			<li><span class="glyphicon glyphicon-time" aria-hidden="true"></span>Free and Fast Delivery</li>
-			<li><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Free shipping On all orders</li>
-			<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
-		</ul>
-	</div>
-</div>
-<!-- //header -->
-<!-- header-bot -->
 <div class="header-bot">
 	<div class="container">
 		<div class="col-md-12" style="padding-left:35%;">
 			<h1><a href="index.php">PATA PUJA<!--<img src="images/logo.jpg">--></a></h1>
 		</div>
-		<!--<div class="col-md-6 header-middle">
-			<form>
-				<div class="search">
-					<input type="search" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" required="">
-				</div>
-				<div class="section_room">
-					<select id="country" onchange="change_country(this.value)" class="frm-field required">
-						<option value="null">All categories</option>
-						<option value="null">Masala</option>     
-						<option value="AX">Picals</option>
-						<option value="AX">Homemade Items</option>
-						<!--<option value="AX">Women's Wear</option>
-						<option value="AX">Watches</option>-->
-						<!--</select>
-				</div>
-				<div class="sear-sub">
-					<input type="submit" value=" ">
-				</div>
-				<div class="clearfix"></div>
-			</form>
-		</div>-->
-		<!--<div class="col-md-3 header-right footer-bottom">
-			<ul>
-				<li><a href="#" class="use1" data-toggle="modal" data-target="#myModal4"><span>Login</span></a>
-					
-				<!--</li>
-				<li><a class="fb" href="#"></a></li>
-				<li><a class="twi" href="#"></a></li>
-				<li><a class="insta" href="#"></a></li>
-				<li><a class="you" href="#"></a></li>-->
 			</ul>
 		</div>
 		<div class="clearfix"></div>
@@ -133,14 +98,14 @@
 											<li><a href="#">Garam Masala</a></li>
 											<li><a href="#">Chilli Powder</a></li>
 											<li><a href="#">Haldi Powder</a></li>
-											<!--<li><a href="mens.html">Watches</a></li>
+										<li><a href="mens.html">Watches</a></li>
 											<li><a href="mens.html">Accessories</a></li>
 											<li><a href="mens.html">Bags</a></li>
 											<li><a href="mens.html">Caps & Hats</a></li>
 										</ul>
 									</div>
 									<div class="col-sm-3 multi-gd-img">
-										<!--<ul class="multi-column-dropdown">
+									<ul class="multi-column-dropdown">
 											<li><a href="mens.html">Jewellery</a></li>
 											<li><a href="mens.html">Sunglasses</a></li>
 											<li><a href="mens.html">Perfumes</a></li>
@@ -149,7 +114,7 @@
 											<li><a href="mens.html">Sunglasses</a></li>
 											<li><a href="mens.html">Swimwear</a></li>
 										</ul>
-									</div> -->
+									</div>
 									<div class="clearfix"></div>
 								</div>
 							</ul>
@@ -163,13 +128,13 @@
 										<li ><a href="#">Mango Pickles</a></li>
 											<li><a href="#">Chilli Pickles</a></li>
 											<li><a href="#">Mixed Pickles</a></li>
-										<!--	<li><a href="womens.html">Clothing</a></li>
+											<li><a href="womens.html">Clothing</a></li>
 											<li><a href="womens.html">Wallets</a></li>
 											<li><a href="womens.html">Footwear</a></li>
 											<li><a href="womens.html">Watches</a></li>
 											<li><a href="womens.html">Accessories</a></li>
 											<li><a href="womens.html">Bags</a></li>
-											<li><a href="womens.html">Caps & Hats</a></li>-->
+											<li><a href="womens.html">Caps & Hats</a></li>
 										</ul>
 									</div>
 									<div class="clearfix"></div>
@@ -200,52 +165,6 @@
 		<div class="clearfix"></div>
 	</div>
 </div>
-<div class="banner-grid">
-	<div id="visual">
-			<div class="slide-visual">
-				<!-- Slide Image Area (1000 x 424) -->
-				<ul class="slide-group">
-					<li><img class="img-responsive" src="images/img/img/sl1.jpg" alt="Dummy Image" /></li>
-					<li><img class="img-responsive" src="images/img/img/sl3.jpg" alt="Dummy Image" /></li>
-					<li><img class="img-responsive" src="images/img/img/sl2.jpg" alt="Dummy Image" /></li>
-				</ul>
-
-				<!-- Slide Description Image Area (316 x 328) -->
-				<div class="script-wrap">
-					<!--<ul class="script-group">
-						<li><div class="inner-script"><img class="img-responsive" src="images/img/sl2.jpg" alt="Dummy Image" /></div></li>
-						<li><div class="inner-script"><img class="img-responsive" src="images/img/sl4.jpg" alt="Dummy Image" /></div></li>
-						<li><div class="inner-script"><img class="img-responsive" src="images/img/sl6.jpg" alt="Dummy Image" /></div></li>
-					</ul>-->
-					<div class="slide-controller">
-						<!--<a href="#" class="btn-prev"><img src="images/btn_prev.png" alt="Prev Slide" /></a>
-						<a href="#" class="btn-play"><img src="images/btn_play.png" alt="Start Slide" /></a>
-						<a href="#" class="btn-pause"><img src="images/btn_pause.png" alt="Pause Slide" /></a>
-						<a href="#" class="btn-next"><img src="images/btn_next.png" alt="Next Slide" /></a>-->
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	<script type="text/javascript" src="js/pignose.layerslider.js"></script>
-	<script type="text/javascript">
-	//<![CDATA[
-		$(window).load(function() {
-			$('#visual').pignoseLayerSlider({
-				play    : '.btn-play',
-				pause   : '.btn-pause',
-				next    : '.btn-next',
-				prev    : '.btn-prev'
-			});
-		});
-	//]]>
-	</script>
-
-</div>
-<!-- //banner -->
-<!-- content -->
-<!--
 <div class="new_arrivals">
 	<div class="container">
 		<h3><span>new </span>arrivals</h3>
@@ -293,10 +212,6 @@
 		</div>
 	</div>
 </div>
-<!-- //content -->
-
-<!-- content-bottom -->
-<!--
 <div class="content-bottom">
 	<div class="col-md-7 content-lgrid">
 		<div class="col-sm-6 content-img-left text-center">
@@ -352,8 +267,6 @@
 	</div>
 	<div class="clearfix"></div>
 </div>
-<!-- //content-bottom -->
-<!-- product-nav -->
 <div class="product-easy">
 	<div class="container">
 		
@@ -1137,36 +1050,6 @@
 		</div>
 	</div>
 </div>
-<!-- //product-nav -->
-<!--
-<div class="coupons">
-	<div class="container">
-		<div class="coupons-grids text-center">
-			<!--<div class="col-md-3 coupons-gd">
-				<h3>Buy your product in a simple way</h3>
-			</div>
-			<div class="col-md-3 coupons-gd">
-				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-				<h4>LOGIN TO YOUR ACCOUNT</h4>
-				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
-			sit amet, consectetur.</p>
-			</div>
-			<div class="col-md-3 coupons-gd">
-				<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-				<h4>SELECT YOUR ITEM</h4>
-				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
-			sit amet, consectetur.</p>
-			</div>
-			<div class="col-md-3 coupons-gd">
-				<span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
-				<h4>MAKE PAYMENT</h4>
-				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor
-			sit amet, consectetur.</p>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>--> 	
   
 <div class="footer" style="background-color: #0d0d0d">
 	<div class="container" >
@@ -1240,7 +1123,7 @@
 		
 <!-- //footer -->
 <!-- login -->
-			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<!--<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content modal-info">
 						<div class="modal-header">
@@ -1300,7 +1183,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 <!-- //login -->
 
 </body>
