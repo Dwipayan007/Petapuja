@@ -1,0 +1,14 @@
+<div class="product-easy">
+	<div class="container">
+        <div class="sap_tabs">
+            <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                <ul class="resp-tabs-list">
+                    <li class="resp-tab-item" *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">
+                        <a href="javascript:void(0)">{{tab.title}}</a>
+                    </li>
+                </ul>
+                <ng-content></ng-content>
+            </div>
+        </div>
+	</div>
+</div>
