@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,SAAS;EACL,IAAI,ECDE,IAAI",
+"sources": ["../Scss/main.scss","../Scss/Variables/_variables.scss"],
+"names": [],
+"file": "style.css"
+}
