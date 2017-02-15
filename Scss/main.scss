@@ -1,4 +1,12 @@
 @import '../Scss/Variables/_variables.scss';
+@import '../Scss/Mixins/_tableborders.scss';
 .fontSize{
     font: $normalFont;
+}
+.row1 {
+    @include flex;
+}
+
+a {
+    @include padding(2px 4px 6px);
 }

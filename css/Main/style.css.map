@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AACA,SAAS;EACL,IAAI,ECFI,IAAI",
-"sources": ["../../Scss/main.scss","../../Scss/Variables/_variables.scss"],
+"mappings": "AAAA,uBAAuB;AAKvB,mBAAmB;AAMnB,0BAA0B;ACT1B,SAAS;EACL,IAAI,EDDI,IAAI;;ACGhB,KAAM;ECHF,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,IAAI;;ADMjB,CAAE;ECDM,OAAO,EAAE,GAAO;EAAhB,OAAO,EAAE,GAAO;EAAhB,OAAO,EAAE,GAAO",
+"sources": ["../../Scss/Variables/_variables.scss","../../Scss/main.scss","../../Scss/Mixins/_tableborders.scss"],
 "names": [],
 "file": "style.css"
 }

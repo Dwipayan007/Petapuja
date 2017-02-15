@@ -1,4 +1,16 @@
+/*Font Size Variables*/
+/*Color Variables*/
+/*Boarder size Variables*/
 .fontSize {
   font: 13px; }
+
+.row1 {
+  display: -webkit-flex;
+  display: flex; }
+
+a {
+  padding: 2px;
+  padding: 4px;
+  padding: 6px; }
 
 /*# sourceMappingURL=style.css.map */
