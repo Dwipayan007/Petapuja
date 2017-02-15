@@ -9,15 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var productService_1 = require('../Services/productService');
 var newArrivalComponent = (function () {
-    function newArrivalComponent() {
+    function newArrivalComponent(productService) {
+        this.productService = productService;
     }
+    //private productData=new ProductModel(0,"Pappad");
+    newArrivalComponent.prototype.getProduct = function (id) {
+        var _this = this;
+        this.productService.getProductDataById(id).subscribe(function (products) { return _this.products = products; }, function (error) { return _this.errorMessage = error; });
+    };
     newArrivalComponent = __decorate([
         core_1.Component({
             selector: "new-arrival",
-            templateUrl: "App/Views/newarrival.html"
+            templateUrl: "App/Views/newarrival.html",
+            providers: [productService_1.ProductService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [productService_1.ProductService])
     ], newArrivalComponent);
     return newArrivalComponent;
 }());

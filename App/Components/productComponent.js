@@ -9,15 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var productService_1 = require('../Services/productService');
+var ProductModel_1 = require('../Models/ProductModel');
 var productComponent = (function () {
-    function productComponent() {
+    function productComponent(productService) {
+        this.productService = productService;
+        this.productData = new ProductModel_1.ProductModel(0, "Pappad");
     }
+    productComponent.prototype.getProduct = function (id) {
+        this.productService.getProductDataById(id);
+    };
     productComponent = __decorate([
         core_1.Component({
             selector: "product-detail",
             templateUrl: "../App/Views/product.html"
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [productService_1.ProductService])
     ], productComponent);
     return productComponent;
 }());

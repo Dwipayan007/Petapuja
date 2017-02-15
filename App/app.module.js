@@ -23,6 +23,8 @@ var dropdownComponent_1 = require('./Components/dropdownComponent');
 var productComponent_1 = require('./Components/productComponent');
 var tabComponent_1 = require('./Components/tabComponent');
 var Tabs_1 = require('./Components/Tabs');
+var productService_1 = require('./Services/productService');
+var http_1 = require('@angular/http');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -31,6 +33,8 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
+                http_1.HttpModule,
+                http_1.JsonpModule,
                 routeComponent_1.routing
             ],
             declarations: [
@@ -45,6 +49,9 @@ var AppModule = (function () {
                 productComponent_1.productComponent,
                 tabComponent_1.tabComponent,
                 Tabs_1.Tabs
+            ],
+            providers: [
+                productService_1.ProductService
             ],
             bootstrap: [appComponent_1.AppComponent, headerComponent_1.headerComponent, footerComponent_1.footerComponent]
         }), 

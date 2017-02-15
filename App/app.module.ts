@@ -14,11 +14,16 @@ import {dropdownComponent} from './Components/dropdownComponent';
 import {productComponent} from './Components/productComponent';
 import {tabComponent} from './Components/tabComponent';
 import {Tabs} from './Components/Tabs';
+import {ProductService} from './Services/productService';
+import { HttpModule, JsonpModule } from '@angular/http';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
+    JsonpModule,
     routing
   ],
   declarations: [
@@ -33,6 +38,9 @@ import {Tabs} from './Components/Tabs';
     productComponent,
     tabComponent,
     Tabs
+  ],
+  providers: [
+    ProductService
   ],
   bootstrap: [AppComponent,headerComponent,footerComponent]
 })

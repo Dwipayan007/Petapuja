@@ -1,7 +1,13 @@
 <div class="new_arrivals">
-    <div class="container">
+    <div class="container" >
+        <ul>
+        <li>
+        {{products.productid}}
+        </li>
+        </ul>
         <h3><span>new </span>arrivals</h3>
         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+        <button name="GetData" (click)="getProduct(1)">GetData</button>
         <div class="new_grids">
             <div class="col-md-4 new-gd-left">
                 <img src="images/wed1.jpg" alt=" " />
